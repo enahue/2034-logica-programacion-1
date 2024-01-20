@@ -6,6 +6,11 @@ if (numeroUsuario == numeroSecreto) {
   //Si el numero es igual al numero secreto
   alert(`Adivinaste, el numero secreto es: ${numeroSecreto}`);
 } else {
+    if(numeroUsuario > numeroSecreto){
+      alert('Muy cerca intenta con un numero mas pequeño');
+    }else{
+      alert('Muy cerca intenta con un numero mas grande');
+    }
   //Si el numero es diferente al numero secreto
-  alert("No adivinaste el numero secreto");
+  // alert("No adivinaste el numero secreto");
 }
