@@ -8,16 +8,9 @@ while (numeroSecreto != numeroUsuario) {
   //Comparamos los numeros
   if (numeroUsuario == numeroSecreto) {
     //Si el numero es igual al numero secreto
-    if(intentos == 1){
       alert(
-        `Adivinaste, el numero secreto es: ${numeroSecreto}, lo lograste en el primer intento!`
+        `Adivinaste, el numero secreto es: ${numeroSecreto}, lo lograste en ${intentos} ${intentos > 1 ? 'intentos' : 'intento'}`
       );
-    }else{
-      alert(
-        `Adivinaste, el numero secreto es: ${numeroSecreto}, lo lograste en ${intentos} intentos`
-      );
-    }
-    
   } else {
     //Si el numero es diferente al numero secreto
     if (numeroUsuario > numeroSecreto) {
