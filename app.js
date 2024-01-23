@@ -1,10 +1,11 @@
 //Declaramos las variables
-let numeroSecreto = 6;
+let numeroMaximoPosible = 10;
+let numeroSecreto = Math.floor(Math.random() * numeroMaximoPosible + 1);
 let numeroUsuario = 0;
 let intentos = 1;
 let maximoIntentos = 3;
 while (numeroSecreto != numeroUsuario) {
-  numeroUsuario = prompt("Me indicas un numero entre 1 y 10 por favor:");
+  numeroUsuario = parseInt(prompt(`Me indicas un numero entre 1 y ${numeroMaximoPosible} por favor:`));
   //Comparamos los numeros
   if (numeroUsuario == numeroSecreto) {
     //Si el numero es igual al numero secreto
